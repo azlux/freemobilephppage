@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'CS_regular';
+  src: url('cs_regular.ttf');
+}
+
+body {
+	background-image: url("https://mlpforums.com/uploads/post_images/img-3597907-1-129753037462-derpy_hooves.png");
+	background-size: cover;
+	font-family: "Inconsolata","courier",monospace;
+	font-size: 1.4 em;
+}
+
+caption h1 {
+	font-family: 'CS_regular';
+	font-size: 1.7 em;
+}
+
+.carte 
+{
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 25px;
+	width: 700px;
+	margin: 10% auto 0 auto;
+	background-color: rgba(255, 255, 255, 0.84);
+	padding-top: 20px;
+	padding-bottom: 40px;
+	box-shadow: 10px 10px 5px 0px #656565;
+}
+
+textarea#sms
+{
+	border: solid 1px white;
+	max-width: 630px;
+}
+
+input#pass
+{
+	border-radius: 5px;
+	border: solid 1px black;
+}
+
+.message
+{
+	padding: 10px;
+	border-radius: 25px;
+	border: 1px solid gray;
+	background-color: white;
+	max-width: 650px;
+}
+
+.envoyer
+{
+	margin-top: 20px;
+	text-align: right;
+}
+
+.center {
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 25px;
+	width: 700px;
+	margin: 10% auto 0 auto;
+	background-color: rgba(255, 255, 255, 0.84);
+	padding-top: 30px;
+	padding-bottom: 40px;
+	box-shadow: 10px 10px 5px 0 #656565;
+	color: rgb(255,0,0);
+	text-align: center;
+}
+
+.re {
+	color: rgb(232,36,41);
+	font-weight: bold;
+}
+
+.gr {
+	color: #00A400;
+	word-wrap: break-word;
+}
+
+.envoyer input:hover {
+	background-color: rgba(240, 243, 181, 0.5);
+	border : 1px solid rgba(124, 144, 164, 0.8);;
+}
+.envoyer input:focus {
+  opacity: 0;
+  transform: scale(2, 2);
+}
+
+.envoyer input {
+    font-size: 0.8em;
+	padding: 0.4em 1em;
+	color: rgba(0, 0, 0, 0.8);
+	border: 1px solid transparent;
+	background-color: rgba(124, 144, 164, 0.4);
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+}
+@media only screen and (max-device-width : 480px) {
+	.carte {
+		width : 100%;
+		margin : 0;
+	}
+	caption {
+		font-size: 0.7em;
+	}
+	.message textarea {
+		width: 275px;
+	}
+}
